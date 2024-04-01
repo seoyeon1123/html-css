@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>textarea</h1>
+  <textarea name="표원식" id="pwo cols="30" rows="10" placeholder="표원식에 대해서 입력하세요."></textarea>
+  <br><br>
+
+  <h1>select</h1>
+  <label for="select">select</label>
+  <select id="select">
+    <option value="사과">사과</option>
+    <option value="포도">포도</option>
+    <option value="오렌지">오렌지</option>
+  </select>
+
+  <br><br>
+  <label for="food">좋아하는 음식을 선택해보세요!</label><br>
+  <select id="food">
+    <optgroup label="야식">
+      <option value="피자">피자</option>
+      <option value="치킨">치킨</option>
+      <option value="떡볶이">떡볶이</option>
+    </optgroup>
+    <optgroup label="후식">
+      <option value="아이스크림">아이스크림</option>
+      <option value="빙수">빙수</option>
+      <option value="빵">빵</option>
+    </optgroup>
+    <optgroup label="음료">
+      <option value="커피">커피</option>
+      <option value="스무디">스무디</option>
+      <option value="에이드">에이드</option>
+    </optgroup>
+  </select>
+
+  <hr> <br>
+  <h1>datalist</h1>
+  <label for="job">직업</label>
+  <input id="job" list="jobs">
+  <!-- input의 list 와 datalist의 id의 값이 같아야 된다!-->
+  <datalist id="jobs">
+    <option value="대학생">
+    <option value="개발자">
+    <option value="보육교사">
+  </datalist>
+
+  <hr>
+  <h1>progress</h1>
+  <progress max="100" id="progressA"></progress>
+  <button type="button" id="progressa">버튼</button>
+
+  <br>
+  <meter min="0" max="100" low="33" high="66" optimum="50" value="30">30달러</meter>
+  <meter min="0" max="100" low="33" high="66" optimum="50" value="50">50달러</meter>
+  <meter min="0" max="100" low="33" high="66" optimum="50" value="100">100달러</meter>
+</body>
+</html>
