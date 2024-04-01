@@ -1,0 +1,54 @@
+/*자손 결합자
+class가 outer에 속하는 li를 모두 바꾸자*/
+.outer li{
+  color: red;
+}
+
+/*자식 (1촌 자손) 결합자
+부등호 > 사용으로 바로 1촌 자식만 포함*/
+.outer > li{
+  color: blue;
+}
+
+
+/*뒤 따르는 모든 동생들을 포함*/
+.starter ~ li{
+  font-weight: bold;
+  color: purple;
+}
+
+/*뒤따르는 바로 다음 동생*/
+.starter+li{
+  font-style: italic;
+  color: aqua;
+}
+
+/* 첫번째, 마지막 요소 선택하는 가상 클래스*/
+ol li:first-child,
+ol li:last-child{
+  color: green;
+}
+
+/* ~가 아닌 가상 요소 선택*/
+ol li:not(.starter){
+  color: hotpink;
+  font-style: oblique;
+}
+
+/* ~번째 요소 선택
+#, odd, even*/
+ol li:nth-child(odd){
+  color:brown;
+}
+
+li:hover{
+  font-weight: bold;
+  color: blue;
+}
+
+ul:not(.outer){
+  color:yellowgreen;
+}
+
+
+
