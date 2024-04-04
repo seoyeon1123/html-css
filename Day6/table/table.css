@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Gugi';
+  src: url(/Day6/fonts/Gugi-Regular.ttf) format('truetype');
+}
+
+body{
+  font-family: 'Gugi', serif;
+}
+
+table {
+  border: 2px solid lavender;
+  caption-side: bottom; 
+  border-collapse: collapse;
+  /*기본값이 separate이기 때문에, collapse로 변경해주어야 한다. */
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+  vertical-align: center;
+}
+
+caption {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+th, td {
+  border: 2px solid lightgray;
+}
