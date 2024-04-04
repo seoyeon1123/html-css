@@ -1,0 +1,23 @@
+/* 부모 요소 내 첫 번째 ~요소 */
+b:first-of-type {
+  text-decoration: overline;
+}
+/* 부모 요소 내 마지막 ~요소 */
+i:last-of-type {
+  text-decoration: line-through;
+}
+/* 부모 요소 내 N번째 ~요소 */
+b:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+/* 부모 요소 내 유일한 ~요소 */
+/* 부모 내에서 유일하게 딱 한개 존재하는 태그 타입을 의미*/
+div :only-of-type {
+  text-decoration: overline line-through underline;
+}
+/* 부모 요소 내 종류 무관 유일한 요소 (독자) */
+/*즉 div 태그 내에 딱 하나 span태그가 있을 때, 두개 이상 있으면 적용 안됌*/
+div :only-child {
+  text-decoration: wavy underline tomato;
+}

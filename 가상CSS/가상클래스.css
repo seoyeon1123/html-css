@@ -1,0 +1,21 @@
+a:hover{
+  background-color: yellowgreen;
+}
+
+a:active{
+  background-color: plum;
+}
+
+input[type=radio]:checked+label{
+  color : tomato;
+  font-weight: bold;
+}
+
+input[type=radig]:enabled+label{
+  text-decoration: underline;
+}
+
+input[type=radio]:disabled+label{
+  color : darkgray;
+  text-decoration: line-through;
+}

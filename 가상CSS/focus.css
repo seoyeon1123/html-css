@@ -1,0 +1,25 @@
+input[type="text"]:focus{
+  outline: 2px dodgerblue solid;
+}
+
+input :required{
+  border-color: hotpink;
+}
+
+input[type="email"]:valid{
+  border-color: olivedrab;
+}
+
+input[type="email"]:not(:valid){
+  border-color: purple;
+}
+[class*="focus"]:focus{
+  outline: 2px solid hotpink;
+}
+.tab-focus, .no-focus{
+  outline: none;
+}
+[class*="focus"]:focus-visible{
+  outline: 2px solid tomato;
+}
+/**포커스가 요소에 있을 때에만 적용**/

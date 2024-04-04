@@ -1,0 +1,36 @@
+.later::after{
+  content:"다음 강좌";
+  margin-left: 0.6em;
+  padding: 0.16em 0.36em;
+  font-size: 0.72em;
+  font-weight: bold;
+  color: white;
+  background-color: darkmagenta;
+  border-radius: 0.2em;
+}
+
+li::before{
+  content: '';
+  display: inline-block;
+  margin: 0 0.4em;
+  width: 0.8em;
+  height: 0.8em;
+  background-image: url(./check.png);
+  background-size: contain;
+}
+
+
+.orange::selection {
+  background-color: orange;
+}
+
+.dark::selection {
+  color: lightgreen;
+  background-color: #222;
+}
+
+/* 플레이스홀더 가상 요소 */
+input:required::placeholder {
+  color: darkred;
+  background-color: yellow;
+}

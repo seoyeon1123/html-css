@@ -1,0 +1,22 @@
+a[href="https://www.yalco.kr"]{
+  color: lemonchiffon;
+  font-size: bold;
+}
+
+input[disabled] + label {
+  color: lavender;
+  text-decoration: line-through;
+}
+
+span[class*="item"]{
+  text-decoration: underline;
+}
+
+span[class*="fruit"]{
+  color: tomato;
+}
+
+span[class^="vege"]{
+  color: olivedrab;
+}
+
