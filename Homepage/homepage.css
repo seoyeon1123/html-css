@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Dongle';
+  font-size: large;
+  src: url(/font/Orbit-Regular.ttf);
+}
 body {
+  font-family: 'Dongle';
   margin: 0;
 }
 
