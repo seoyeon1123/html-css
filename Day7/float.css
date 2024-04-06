@@ -1,0 +1,33 @@
+
+body { padding: 24px; }
+
+section {
+  padding: 16px;
+  background-color: lightgray;
+  margin: 1em; padding: 1em;
+}
+
+.blue, .red {
+  height: 200px; line-height: 200px;
+  font-size: 1.4em;
+  text-align: center;
+  color: white;
+}
+
+.blue {
+  float: left;
+  width: 200px;
+  background-color: slateblue;
+}
+
+.red {
+  float: left;
+  width: calc(100% - 200px);
+  background-color: tomato;
+}
+
+section::after{
+  content: " ";
+  display: block;
+  clear: both;
+}
